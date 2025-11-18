@@ -1,0 +1,22 @@
+@@include("html/header.html", {
+	"class": " is-active"
+})
+
+	<main class="main flex-container">
+		@@include("html/breadcrumbs.html", {
+			"current": "Not Found"
+		})
+		<section class="not-found">
+			<h1 class="not-found__title">
+				404
+			</h1>
+			<h2 class="not-found__subtitle title">
+				Page not found
+			</h2>
+			<a href="./" class="not-found__link button">
+				Back to Home
+			</a>
+		</section>
+	</main>
+
+@@include("html/footer.html")

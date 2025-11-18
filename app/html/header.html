@@ -3,32 +3,106 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <meta name="theme-color" content="#79624F"> -->
-	<title>gulp-start</title>
+	<meta name="theme-color" content="#1E1E1E">
+	<title>Apex Siding</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header@@class">
 			<div class="header__logo">
-				<a href="index.html" class="header__logo-link">
-					<!-- <img src="img/logo.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo-img"> -->
+				<a href="./" class="header__logo-link">
+					<span class="visible-on-desktop">
+						<img src="img/logo.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo-img">
+						<img src="img/logo-invert.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo-img">
+					</span>
+					<span class="visible-on-mobile">
+						<img src="img/min-logo.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo-img">
+						<img src="img/min-logo-invert.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo-img">
+					</span>
 				</a>
 			</div>
-			<nav class="header__nav">
+			<nav class="header__nav" aria-label="Main">
 				<div class="header__nav-body">
 					<ul class="header__nav-list">
 						<li>
-							<a href="#">
-								
+							<a href="./">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="./about-us.html">
+								About Us
+							</a>
+						</li>
+						<li>
+							<a href="./contact-us.html">
+								Contact Us
 							</a>
 						</li>
 					</ul>
+					<div class="header__nav-footer visible-on-mobile">
+						<div class="header__schedule">
+							Mon–Fri: 9:00 AM – 6:00 PM <br>
+							Sat–Sun: Closed
+						</div>
+						<ul class="header__social">
+							<li>
+								<a href="#" aria-label="Instagram" target="_blank">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#instagram" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Facebook" target="_blank">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg?1#facebook" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
-			<button class="header__burger" type="button" aria-label="Menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
+			<div class="header__add">
+				<div class="header__schedule visible-on-desktop">
+					Mon–Fri: 9:00 AM – 6:00 PM <br>
+					Sat–Sun: Closed
+				</div>
+				<ul class="header__social visible-on-desktop">
+					<li>
+						<a href="#" aria-label="Instagram" target="_blank">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg#instagram" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Facebook" target="_blank">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?1#facebook" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<a href="./#contact-us" class="header__cta button visible-on-desktop scroll-to" aria-label="Get in Touch">
+					<!-- <svg width="24" height="24">
+						<use href="img/sprites.svg#phone-call" />
+					</svg> -->
+					<span>
+						Get in Touch
+					</span>
+				</a>
+				<a href="tel:+19162251753" class="header__min-cta visible-on-mobile" aria-label="Call">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#phone-call" />
+					</svg>
+				</a>
+				<button class="header__burger" type="button" aria-label="Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
 		</header>

@@ -1,0 +1,1 @@
+export default function Header(){var e=document.querySelector(".header");window.scrollY,e.classList.add("is-init")}

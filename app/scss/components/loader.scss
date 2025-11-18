@@ -1,0 +1,47 @@
+.loader {
+	width: 2rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	--color: var(--accent);
+	background:
+		radial-gradient(farthest-side, var(--color) 94%, #0000) top/8px 8px no-repeat,
+		conic-gradient(#0000 30%, var(--color));
+	mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+	animation: loader 1s infinite linear;
+}
+@keyframes loader {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.button[type="submit"] {
+	position: relative;
+
+	span:first-child {
+		opacity: 1; visibility: visible;
+		transition: opacity .3s, visibility .3s;
+	}
+
+	.loader {
+		position: absolute;
+		left: 50%; top: 50%;
+		translate: -50% -50%;
+
+		--color: var(--text-color);
+
+		opacity: 0; visibility: hidden;
+		transition: opacity .3s, visibility .3s;
+	}
+}
+
+[aria-busy="true"] .button[type="submit"] {
+	pointer-events: none;
+
+	span:first-child {
+		opacity: 0; visibility: hidden;
+	}
+	.loader {
+		opacity: 1; visibility: visible;
+	}
+}

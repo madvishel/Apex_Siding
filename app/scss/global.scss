@@ -1,29 +1,44 @@
 @use 'sass:math';
 
 :root {
-	--title-font: 'Arial', sans-serif;
-	--main-font: 'Arial', sans-serif;
+	--title-font: 'Open Sans', sans-serif;
+	--main-font: 'Inter', sans-serif;
 	
-	--accent: #5ec63f;
-	--accent-hover: #71db50;
-	--accent-active: #4eb42f;
+	--accent: #E37828;
+	--accent-hover: #F89C56;
+	--accent-active: #D45B00;
 
-	--background: #FFF;
-	--text-color: #000;
+	--primary: #FBF6F3;
+	--primary-2: #EEEEEE;
+	--primary-3: #CCCCCC;
+	--primary-4: #F7F7F7;
+	--primary-5: #DCDCDC;
+	--secondary: #1E1E1E;
+	--secondary-2: #404040;
+	--secondary-3: #2D2D2D;
+	--secondary-gradient: linear-gradient(109.21deg, #1E1E1E 5.47%, #181818 94.82%);
+	--text-color: #fff;
+	--error: #E32828;
 
-	--container-gap: 15px;
-	--container: 1440px;
+	--container: 1646px;
+	--grid-gap: 2rem;
 }
 
 html {
 	--container-padding: var(--container-gap);
+	--container-gap: 1rem;
+	--n-container-gap: -1rem;
 
 	min-height: 100%; min-width: 320px;
 
 	font-size: 16px;
 
-	@media (min-width: 1440px) {
-		--container-padding: max(var(--container-padding), calc(50% - (var(--container) / 2)));
+	@media (min-width: 75rem) {
+		--container-gap: 3rem;
+	}
+
+	@media (min-width: 102.875rem) {
+		--container-padding: max(var(--container-gap), calc(50% - (var(--container) / 2)));
 	}
 }
 
@@ -69,9 +84,16 @@ section {
 	flex: 1 0 auto;
 
 	overflow: hidden;
+
+	background: var(--primary-4);
+
+	&.flex-container {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
-.container, section, header, footer {
+.container, section, .header, .footer {
 	padding-left: var(--container-padding); padding-right: var(--container-padding);
 }
 
@@ -84,5 +106,33 @@ section {
 .visible-on-desktop {
 	@media (max-width: 991px) {
 		display: none !important;
+	}
+}
+
+.image-effect {
+	width: 100%; height: auto;
+
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0.375rem;
+	background: var(--primary-3);
+
+	object-fit: cover;
+}
+
+.section-padding {
+	padding-top: 3.75rem; padding-bottom: 3.75rem;
+
+	@media (min-width: 62rem) {
+		padding-top: 9.375rem; padding-bottom: 9.375rem;
+	}
+}
+
+.section-secondary {
+	background: var(--secondary-gradient);
+
+	color: var(--text-color);
+
+	.section-content__text {
+		color: var(--primary-2);
 	}
 }

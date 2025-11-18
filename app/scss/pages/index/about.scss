@@ -1,0 +1,152 @@
+.about {
+
+	padding-top: 3.75rem; padding-bottom: 3.75rem;
+
+	@media (min-width: 62rem) {
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(12, 1fr);
+		gap: var(--grid-gap);
+
+		padding-top: 10.875rem; padding-bottom: 10.875rem;
+
+		background: var(--primary-4);
+	}
+
+	@media (min-width: 106rem) {
+		padding-top: 11.5625rem; padding-bottom: 11.5625rem;
+	}
+
+	// .about__content
+
+	&__content {
+		position: relative;
+
+		grid-column: 2/7;
+
+		.section-content__text {
+			max-width: 100%;
+		}
+	}
+
+	// .about__image
+
+	&__image {
+		position: relative;
+
+		grid-column: 8/12;
+
+		margin: 2.75rem var(--n-container-gap) 3.25rem;
+		
+		@media (min-width: 106rem) {
+			grid-column: 8/13;
+
+			margin: 0;
+		}
+	}
+
+	// .about__image-decor
+
+	&__image-decor {
+		&:nth-child(1) {
+			left: 0; top: 0;
+			transform: translate(-1.5rem, -1rem);
+			
+			width: 60%; aspect-ratio: 390/240;
+		}
+
+		&:nth-child(2) {
+			right: 0; bottom: 0;
+			transform: translate(1.5rem, 1rem);
+			
+			width: 60%; aspect-ratio: 390/240;
+		}
+
+		&:nth-child(4) {
+			right: 0; bottom: 100%;
+			transform: translate(-1rem, calc(100% - 1rem));
+			
+			width: clamp(3.375rem, 20%, 4.6875rem); aspect-ratio: 1/1;
+
+			z-index: 2;
+		}
+
+		&:nth-child(5) {
+			left: 0; bottom: 0;
+			transform: translate(1rem, 1rem);
+			
+			width: clamp(3.375rem, 20%, 4.6875rem); aspect-ratio: 1/1;
+
+			z-index: 2;
+		}
+
+		@media (min-width: 62rem) {
+			&:nth-child(1) {
+				transform: translate(-1.5rem, -1.5rem);
+				
+				width: 50%;
+			}
+
+			&:nth-child(2) {
+				transform: translate(-1.5rem, 1.5rem);
+				
+				width: 50%;
+			}
+
+			&:nth-child(4) {
+				top: 0; bottom: auto;
+				transform: translate(2rem, -2rem);
+				
+				width: 20%;
+			}
+
+			&:nth-child(5) {
+				transform: translate(-2rem, 2rem);
+				
+				width: 20%;
+			}
+		}
+
+		@media (min-width: 106rem) {
+			&:nth-child(1) {
+				transform: translate(-2.125rem, -2.125rem);
+
+				width: 24.375rem;
+			}
+
+			&:nth-child(2) {
+				transform: translate(2.125rem, 2.125rem);
+
+				width: 24.375rem;
+			}
+
+			&:nth-child(4) {
+				transform: translate(3.125rem, -3.125rem);
+
+				width: 9.0625rem;
+			}
+
+			&:nth-child(5) {
+				transform: translate(-3.125rem, 3.125rem);
+
+				width: 9.0625rem;
+			}
+		}
+	}
+
+	// .about__image-inner
+
+	&__image-inner {
+		position: relative;
+		z-index: 2;
+
+		img {
+			aspect-ratio: 670/595;
+
+			@media (max-width: 61.9375rem) {
+				border-radius: 0;
+			}
+		}
+	}
+}
+

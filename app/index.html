@@ -1,7 +1,282 @@
-@@include("html/header.html")
+@@include("html/header.html", {
+	"class": ""
+})
 
 	<main class="main">
-		
+		<section class="hero">
+			<div class="hero__background">
+				<picture>
+					<source srcset="img/index/hero/hero-background.avif" type="image/avif">
+					<source srcset="img/index/hero/hero-background.webp" type="image/webp">
+					<img src="img/index/hero/hero-background.jpg" alt="" width="0" height="0" loading="lazy">
+				</picture>
+			</div>
+			<div class="hero__column">
+				<h1 class="hero__title">
+					Shaping Your Home
+				</h1>
+				<h2 class="hero__subtitle">
+					Reliability Quality Style
+				</h2>
+				<hr class="hero__separator decor-separator">
+				<div class="hero__content">
+					<h3>Complete Exterior Solutions</h3>
+					<p>From siding and doors to windows and full exterior remodeling, we deliver reliable workmanship that enhances both the look and value of your home.</p>
+				</div>
+				<dl class="hero__license">
+					<dt>Licensed & Insured</dt>
+					<dd>CSLB License #00000</dd>
+				</dl>
+			</div>
+			<div class="hero__column">
+				<form action="#" class="hero__form contact-form">
+					<div class="contact-form__hero">
+						<h3 class="title is-min">Request Your Free Estimate</h3>
+						<p>Enter your info and get a fast, <br> no-obligation quote for your home renovation.</p>
+					</div>
+					<div class="contact-form__inner">
+						<label class="contact-form__label form-label">
+							<span>First name:</span>
+							<input type="text" name="first-name" placeholder="Your first name" required>
+						</label>
+						<label class="contact-form__label form-label">
+							<span>Last name:</span>
+							<input type="text" name="last-name" placeholder="Last name:" required>
+						</label>
+						<label class="contact-form__label form-label">
+							<span>Phone:</span>
+							<input type="tel" name="phone" placeholder="Your phone number" required>
+						</label>
+						<label class="contact-form__label form-label">
+							<span>Email:</span>
+							<input type="email" name="email" placeholder="Your email" required>
+						</label>
+						<label class="contact-form__label form-label is-full">
+							<span>Type your message here:</span>
+							<span data-text>
+								<textarea name="message" placeholder="Tell us about your project" maxlength="500"></textarea>
+							</span>
+						</label>
+					</div>
+					<button class="contact-form__submit button is-large" type="submit">
+						<span>Request a Call</span>
+						<div class="loader"></div>
+					</button>
+					<div class="contact-form__message" aria-live="polite"></div>
+				</form>
+			</div>
+		</section>
+		<section class="about">
+			<div class="about__content section-content">
+				<h2 class="section-content__title title">
+					About Us
+				</h2>
+				<hr class="section-content__separator decor-separator">
+				<div class="about__image visible-on-mobile">
+					<div class="about__image-decor decor-element-1"></div>
+					<div class="about__image-decor decor-element-1 mode-2"></div>
+					<div class="about__image-inner">
+						<picture>
+							<source srcset="img/index/about/about-image.avif" type="image/avif">
+							<source srcset="img/index/about/about-image.webp" type="image/webp">
+							<img src="img/index/about/about-image.jpg" alt="" width="670" height="595" loading="lazy" class="image-effect">
+						</picture>
+					</div>
+					<div class="about__image-decor decor-element-2"></div>
+					<div class="about__image-decor decor-element-2"></div>
+				</div>
+				<div class="section-content__text">
+					<p>
+						Apex Siding & Intera Homes is a team of professionals specializing in siding installation, window and door replacements, and customized exterior solutions serving the Sacramento area. We hold a valid CSLB license and have over 2.5 years of experience working with top-quality materials like James Hardie to ensure durability and style.
+					</p>
+				</div>
+				<div class="section-content__footer">
+					<a href="./about-us.html" class="section-content__button button scroll-to">
+						Read More
+					</a>
+				</div>
+			</div>
+			<div class="about__image visible-on-desktop">
+				<div class="about__image-decor decor-element-1"></div>
+				<div class="about__image-decor decor-element-1 mode-2"></div>
+				<div class="about__image-inner">
+					<picture>
+						<source srcset="img/index/about/about-image.avif" type="image/avif">
+						<source srcset="img/index/about/about-image.webp" type="image/webp">
+						<img src="img/index/about/about-image.jpg" alt="" class="image-effect" width="670" height="595" loading="lazy">
+					</picture>
+				</div>
+				<div class="about__image-decor decor-element-2"></div>
+				<div class="about__image-decor decor-element-2"></div>
+			</div>
+		</section>
+		<section class="services section-secondary section-padding">
+			<div class="services__hero section-content">
+				<h2 class="section-content__title title">
+					Services
+				</h2>
+				<hr class="section-content__separator decor-separator">
+				<div class="section-content__text">
+					<p>
+						We offer siding, door and window installation, and full exterior remodeling. Every project is completed with quality and attention to detail.
+					</p>
+				</div>
+			</div>
+			<ul class="services__list">
+				@@loop("html/service-card.html", [
+					{
+						"image": "1",
+						"title": "Siding Working",
+						"text": "Give your home a fresh look with durable, weather-resistant siding. We ensures quality installation and reliable repairs that last."
+					},
+					{
+						"image": "2",
+						"title": "Door Installation",
+						"text": "A new door can improve both security <br> and style. We install doors with precision, making your entryway strong and welcoming."
+					},
+					{
+						"image": "3",
+						"title": "Window Installation",
+						"text": "Upgrade your home with modern, energy-efficient windows. Our experts provide flawless installation for comfort and savings."
+					},
+					{
+						"image": "4",
+						"title": "Exterior Remodeling",
+						"text": "Transform the look of your home with a complete exterior remodel. From concept to completion, we bring your vision to life."
+					},
+				])
+			</ul>
+			<div class="services__footer">
+				<a href="#contact-us" class="services__button button scroll-to">
+					Get In Touch
+				</a>
+			</div>
+		</section>
+		<section class="portfolio">
+			<div class="portfolio__hero section-content container">
+				<h2 class="section-content__title title">
+					Portfolio
+				</h2>
+				<hr class="section-content__separator decor-separator">
+				<div class="section-content__text">
+					<p>
+						Check out our past projects to see the transformations we’ve created. From siding to windows and doors, every home reflects our expertise and style.
+					</p>
+				</div>
+			</div>
+			<div class="portfolio__inner">
+				<div class="portfolio__image">
+					<picture>
+						<source srcset="img/index/portfolio/portfolio-images-1.avif" type="image/avif">
+						<source srcset="img/index/portfolio/portfolio-images-1.webp" type="image/webp">
+						<img src="img/index/portfolio/portfolio-images-1.jpg" alt="" width="1224" height="618" class="image-aspect-ratio" loading="lazy">
+					</picture>
+				</div>
+				<div class="portfolio__image">
+					<picture>
+						<source srcset="img/index/portfolio/portfolio-images-2.avif" type="image/avif">
+						<source srcset="img/index/portfolio/portfolio-images-2.webp" type="image/webp">
+						<img src="img/index/portfolio/portfolio-images-2.jpg" alt="" width="664" height="1178" class="image-aspect-ratio" loading="lazy">
+					</picture>
+				</div>
+				<div class="portfolio__social portfolio-social">
+					<div class="portfolio-social__hero section-content">
+						<h2 class="section-content__title title is-min">
+							Follow our work
+						</h2>
+						<hr class="section-content__separator decor-separator">
+						<div class="section-content__text is-min">
+							<p>
+								On Instagram we share not only the final results but also every step of the renovation — from rough work to the finishing touches. It’s the best way to see the process up close.
+							</p>
+						</div>
+					</div>
+					<a href="#" class="portfolio-social__icon" target="_blank" aria-label="Instagram">
+						<svg width="24" height="24">
+							<use href="img/sprites.svg#instagram" />
+						</svg>
+					</a>
+					<a href="#" class="portfolio-social__button button" target="_blank">
+						Follow Us
+					</a>
+				</div>
+				<div class="portfolio__image">
+					<picture>
+						<source srcset="img/index/portfolio/portfolio-images-3.avif" type="image/avif">
+						<source srcset="img/index/portfolio/portfolio-images-3.webp" type="image/webp">
+						<img src="img/index/portfolio/portfolio-images-3.jpg" alt="" width="1224" height="617" class="image-aspect-ratio" loading="lazy">
+					</picture>
+				</div>
+				<div class="portfolio__image">
+					<picture>
+						<source srcset="img/index/portfolio/portfolio-images-4.avif" type="image/avif">
+						<source srcset="img/index/portfolio/portfolio-images-4.webp" type="image/webp">
+						<img src="img/index/portfolio/portfolio-images-4.jpg" alt="" width="664" height="1178" class="image-aspect-ratio" loading="lazy">
+					</picture>
+				</div>
+			</div>
+		</section>
+		<section class="advantages section-secondary section-padding">
+			<div class="advantages__hero section-content">
+				<h2 class="section-content__title title">
+					Advantages
+				</h2>
+				<hr class="section-content__separator decor-separator">
+				<div class="section-content__text">
+					<p>
+						Licensed, insured, and fully transparent, we deliver reliable workmanship you can trust. Our team ensures every project meets the highest standards.
+					</p>
+				</div>
+			</div>
+			<div class="advantages__image">
+				<div class="advantages__image-decor decor-element-1 mode-3"></div>
+				<div class="advantages__image-inner">
+					<picture>
+						<source srcset="img/index/advantages/advantages-image.avif" type="image/avif">
+						<source srcset="img/index/advantages/advantages-image.webp" type="image/webp">
+						<img src="img/index/advantages/advantages-image.jpg" alt="" width="668" height="668" class="image-aspect-ratio image-effect" loading="lazy">
+					</picture>
+				</div>
+				<div class="advantages__image-decor decor-element-2"></div>
+			</div>
+			<div class="advantages__content">
+				<ul class="advantages__list">
+					@@loop("html/advantages-item.html", [
+						{
+							"icon": "1",
+							"title": "Licensed and insured",
+							"text": "We’re fully licensed and insured for your peace of mind."
+						},
+						{
+							"icon": "2",
+							"title": "Local and responsive",
+							"text": "As a local team, we respond quickly to your questions and needs."
+						},
+						{
+							"icon": "3",
+							"title": "Transparent pricing",
+							"text": "Clear, upfront pricing with no hidden costs."
+						},
+						{
+							"icon": "4",
+							"title": "Quality workmanship",
+							"text": "Every project is backed by our guarantee of top-quality work."
+						},
+						{
+							"icon": "5",
+							"title": "Free Estimate",
+							"text": "Get started with a free, no-obligation estimate."
+						},
+					])
+				</ul>
+				<div class="advantages__footer">
+					<a href="./about-us.html" class="advantages__button button scroll-to">
+						Read More
+					</a>
+				</div>
+			</div>
+		</section>
+		@@include("html/contact-us.html")
 	</main>
 
 @@include("html/footer.html")

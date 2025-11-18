@@ -1,0 +1,174 @@
+.services {
+
+	// .services__hero
+
+	&__hero {
+	}
+
+	// .services__list
+
+	&__list {
+		display: grid;
+		grid-template-columns: 100%;
+		gap: 2rem;
+
+		padding-top: 2rem;
+
+		@media (min-width: 36rem) {
+			grid-template-columns: 1fr 1fr;
+			gap: 1rem;
+		}
+
+		@media (min-width: 62rem) {
+			grid-template-columns: repeat(4, 1fr);
+
+			padding-top: 4rem;
+		}
+
+		@media (min-width: 94rem) {
+			gap: var(--grid-gap);
+		}
+	}
+
+	// .services__card
+
+	&__card {
+	}
+
+	// .services__footer
+
+	&__footer {
+		display: flex;
+		justify-content: center;
+
+		padding-top: 2rem;
+
+		@media (min-width: 36rem) {
+			padding-top: 3.375rem;
+		}
+	}
+
+	// .services__button
+
+	&__button {
+	}
+}
+
+.services-card {
+
+	position: relative;
+
+	background: var(--secondary);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 6px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+
+		border: 1px solid var(--secondary-2);
+		border-radius: 0.375rem;
+
+		pointer-events: none;
+	}
+
+	// .services-card__image
+
+	&__image {
+		img {
+			border-radius: 0.375rem 0.375rem 0 0;
+		}
+	}
+
+	// .services-card__icon
+
+	&__icon {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 4.5rem; height: 4.5rem;
+		margin: -2.25rem auto;
+		
+		background: var(--secondary-3);
+		border: 1px solid var(--secondary-2);
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 3.125rem;
+		
+		z-index: 2;
+
+		img {
+			width: 45%; height: 45%;
+		}
+
+		@media (min-width: 36rem) {
+			width: 3.25rem; height: 3.25rem;
+			margin: -1.625rem auto;
+		}
+
+		@media (min-width: 94rem) {
+			width: 5.125rem; height: 5.125rem;
+			margin: -2.5625rem auto;
+		}
+	}
+
+	// .services-card__content
+
+	&__content {
+		padding: 3.5625rem 0.75rem 1.25rem;
+
+		text-align: center;
+
+		@media (min-width: 36rem) {
+			padding: 3rem 0.75rem 1rem;
+		}
+
+		@media (min-width: 94rem) {
+			padding: 4rem 0.75rem 2.5rem;
+		}
+
+		@media (min-width: 106rem) {
+			padding: 4rem 1.25rem 3.25rem;
+		}
+
+		h3 {
+			font-family: var(--title-font);
+			font-weight: 700;
+			font-size: 1.25rem;
+			line-height: 135.714286%;
+
+			@media (min-width: 94rem) {
+				font-size: 1.75rem;
+			}
+		}
+
+		p {
+			padding-top: 0.625rem;
+
+			font-size: 1rem;
+			line-height: 175%;
+			color: var(--primary-3);
+
+			br {
+				display: none;
+			}
+
+			@media (min-width: 36rem) {
+				padding-top: 1rem;
+
+				font-size: 0.875rem;
+			}
+
+			@media (min-width: 94rem) {
+				font-size: 1rem;
+
+				br {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

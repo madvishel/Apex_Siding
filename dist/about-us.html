@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#1E1E1E">
+	<title>Apex Siding</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__logo">
+				<a href="./" class="header__logo-link">
+					<span class="visible-on-desktop">
+						<img src="img/logo.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo-img">
+						<img src="img/logo-invert.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo-img">
+					</span>
+					<span class="visible-on-mobile">
+						<img src="img/min-logo.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo-img">
+						<img src="img/min-logo-invert.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo-img">
+					</span>
+				</a>
+			</div>
+			<nav class="header__nav" aria-label="Main">
+				<div class="header__nav-body">
+					<ul class="header__nav-list">
+						<li>
+							<a href="./">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="./about-us.html">
+								About Us
+							</a>
+						</li>
+						<li>
+							<a href="./contact-us.html">
+								Contact Us
+							</a>
+						</li>
+					</ul>
+					<div class="header__nav-footer visible-on-mobile">
+						<div class="header__schedule">
+							Mon–Fri: 9:00 AM – 6:00 PM <br>
+							Sat–Sun: Closed
+						</div>
+						<ul class="header__social">
+							<li>
+								<a href="#" aria-label="Instagram" target="_blank">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#instagram" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Facebook" target="_blank">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg?1#facebook" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="header__add">
+				<div class="header__schedule visible-on-desktop">
+					Mon–Fri: 9:00 AM – 6:00 PM <br>
+					Sat–Sun: Closed
+				</div>
+				<ul class="header__social visible-on-desktop">
+					<li>
+						<a href="#" aria-label="Instagram" target="_blank">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg#instagram" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Facebook" target="_blank">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?1#facebook" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<a href="./#contact-us" class="header__cta button visible-on-desktop scroll-to" aria-label="Get in Touch">
+					<!-- <svg width="24" height="24">
+						<use href="img/sprites.svg#phone-call" />
+					</svg> -->
+					<span>
+						Get in Touch
+					</span>
+				</a>
+				<a href="tel:+19162251753" class="header__min-cta visible-on-mobile" aria-label="Call">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg#phone-call" />
+					</svg>
+				</a>
+				<button class="header__burger" type="button" aria-label="Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="breadcrumbs container">
+				<a href="./" class="breadcrumbs__link">
+					Home
+				</a>
+				<span class="breadcrumbs__separator">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg?13#separator" />
+					</svg>
+				</span>
+				<span class="breadcrumbs__current">About Us</span>
+			</div>
+			<section class="about-us">
+				<div class="about-us__column">
+					<div class="about-us__content section-content is-light">
+						<h2 class="section-content__title title">
+							About Us
+						</h2>
+						<hr class="section-content__separator decor-separator">
+						<div class="section-content__text is-start">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa eaque aliquam magni laborum sint voluptates sapiente qui ratione iure enim aut perspiciatis aliquid quae molestiae, in accusantium ullam accusamus! </p>
+							<p>Et explicabo neque perferendis, nostrum sed veniam saepe facere pariatur molestiae soluta? Molestias consequuntur at explicabo! Id minima voluptas illum.</p>
+							<p>Et explicabo neque perferendis, nostrum sed veniam saepe facere pariatur molestiae soluta? Molestias consequuntur at explicabo! Id minima voluptas illum.</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-us__column">
+					<div class="about-us__image">
+						<div class="about-us__image-decor decor-element-1"></div>
+						<div class="about-us__image-inner">
+							<picture>
+								<source srcset="img/about-us/hero/about-us-hero-image.avif" type="image/avif">
+								<source srcset="img/about-us/hero/about-us-hero-image.webp" type="image/webp">
+								<img src="img/about-us/hero/about-us-hero-image.jpg" alt="" class="image-effect" width="670" height="595" loading="lazy">
+							</picture>
+						</div>
+						<div class="about-us__image-decor decor-element-2"></div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery section-padding">
+				<div class="gallery__hero section-content container">
+					<h2 class="section-content__title title">
+						Gallery
+					</h2>
+					<hr class="section-content__separator decor-separator">
+					<div class="section-content__text">
+						<p>Explore our gallery to see completed siding, window, door, and remodeling projects. Each photo reflects the quality and style we bring to every home.</p>
+					</div>
+				</div>
+				<div class="gallery__slider gallery-slider swiper">
+					<div class="gallery-slider__wrapper swiper-wrapper">
+						<div class="gallery-slider__slide gallery-slide swiper-slide">
+							<a href="img/about-us/gallery/about-us-gallery-image-1.jpg" data-fancybox="gallery">
+								<picture>
+									<source srcset="img/about-us/gallery/about-us-gallery-image-1.avif" type="image/avif">
+									<source srcset="img/about-us/gallery/about-us-gallery-image-1.webp" type="image/webp">
+									<img src="img/about-us/gallery/about-us-gallery-image-1.jpg" alt="" width="524" height="566" class="image-aspect-ratio" loading="lazy">
+								</picture>
+							</a>
+						</div>
+						<div class="gallery-slider__slide gallery-slide swiper-slide">
+							<a href="img/about-us/gallery/about-us-gallery-image-2.jpg" data-fancybox="gallery">
+								<picture>
+									<source srcset="img/about-us/gallery/about-us-gallery-image-2.avif" type="image/avif">
+									<source srcset="img/about-us/gallery/about-us-gallery-image-2.webp" type="image/webp">
+									<img src="img/about-us/gallery/about-us-gallery-image-2.jpg" alt="" width="808" height="566" class="image-aspect-ratio" loading="lazy">
+								</picture>
+							</a>
+						</div>
+						<div class="gallery-slider__slide gallery-slide swiper-slide">
+							<a href="img/about-us/gallery/about-us-gallery-image-3.jpg" data-fancybox="gallery">
+								<picture>
+									<source srcset="img/about-us/gallery/about-us-gallery-image-3.avif" type="image/avif">
+									<source srcset="img/about-us/gallery/about-us-gallery-image-3.webp" type="image/webp">
+									<img src="img/about-us/gallery/about-us-gallery-image-3.jpg" alt="" width="524" height="566" class="image-aspect-ratio" loading="lazy">
+								</picture>
+							</a>
+						</div>
+						<div class="gallery-slider__slide gallery-slide swiper-slide">
+							<a href="img/about-us/gallery/about-us-gallery-image-1.jpg" data-fancybox="gallery">
+								<picture>
+									<source srcset="img/about-us/gallery/about-us-gallery-image-1.avif" type="image/avif">
+									<source srcset="img/about-us/gallery/about-us-gallery-image-1.webp" type="image/webp">
+									<img src="img/about-us/gallery/about-us-gallery-image-1.jpg" alt="" width="524" height="566" class="image-aspect-ratio" loading="lazy">
+								</picture>
+							</a>
+						</div>
+						<div class="gallery-slider__slide gallery-slide swiper-slide">
+							<a href="img/about-us/gallery/about-us-gallery-image-2.jpg" data-fancybox="gallery">
+								<picture>
+									<source srcset="img/about-us/gallery/about-us-gallery-image-2.avif" type="image/avif">
+									<source srcset="img/about-us/gallery/about-us-gallery-image-2.webp" type="image/webp">
+									<img src="img/about-us/gallery/about-us-gallery-image-2.jpg" alt="" width="808" height="566" class="image-aspect-ratio" loading="lazy">
+								</picture>
+							</a>
+						</div>
+						<div class="gallery-slider__slide gallery-slide swiper-slide">
+							<a href="img/about-us/gallery/about-us-gallery-image-3.jpg" data-fancybox="gallery">
+								<picture>
+									<source srcset="img/about-us/gallery/about-us-gallery-image-3.avif" type="image/avif">
+									<source srcset="img/about-us/gallery/about-us-gallery-image-3.webp" type="image/webp">
+									<img src="img/about-us/gallery/about-us-gallery-image-3.jpg" alt="" width="524" height="566" class="image-aspect-ratio" loading="lazy">
+								</picture>
+							</a>
+						</div>
+					</div>
+					<div class="gallery-slider__footer">
+						<button class="gallery-slider__arrow swiper-button-prev" type="button">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?2#slider-arrow-prev" />
+							</svg>
+						</button>
+						<div class="gallery-slider__pagination swiper-pagination"></div>
+						<button class="gallery-slider__arrow swiper-button-next" type="button">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?2#slider-arrow-next" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="action-block">
+				<div class="action-block__backgound">
+					<picture>
+						<source srcset="img/index/action/action-background.avif" type="image/avif">
+						<source srcset="img/index/action/action-background.webp" type="image/webp">
+						<img src="img/index/action/action-background.jpg" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+				<div class="action-block__content">
+					<h2 class="action-block__title title">
+						Turn your house into <br> the home you love
+					</h2>
+					<a href="#contact-us" class="action-block__button button scroll-to">
+						Get in Touch
+					</a>
+				</div>
+			</section>
+			<section class="contact-us" id="contact-us">
+				<div class="contact-us__row container">
+					<div class="contact-us__column">
+						<div class="contact-us__hero section-content">
+							<h2 class="section-content__title title">
+								Contact Us
+							</h2>
+							<hr class="section-content__separator decor-separator">
+							<div class="section-content__text">
+								<p>
+									Ready to upgrade your home’s exterior? <br> Contact us today for a free estimate and expert guidance.
+								</p>
+							</div>
+						</div>
+						<form action="#" class="contact-us__form contact-form">
+							<div class="contact-form__inner">
+								<label class="contact-form__label form-label">
+									<span>First name:</span>
+									<input type="text" name="first-name" placeholder="Your first name" autocapitalize="sentences" required>
+								</label>
+								<label class="contact-form__label form-label">
+									<span>Last name:</span>
+									<input type="text" name="last-name" placeholder="Last name:" autocapitalize="sentences" required>
+								</label>
+								<label class="contact-form__label form-label">
+									<span>Phone:</span>
+									<input type="tel" name="phone" placeholder="Your phone number" required>
+								</label>
+								<label class="contact-form__label form-label">
+									<span>Email:</span>
+									<input type="email" name="email" placeholder="Your email" required>
+								</label>
+								<label class="contact-form__label form-label is-full">
+									<span>Type your message here:</span>
+									<span data-text>
+										<textarea name="message" placeholder="Tell us about your project" autocapitalize="sentences" maxlength="500"></textarea>
+									</span>
+								</label>
+							</div>
+							<button class="contact-form__submit button is-large" type="submit">
+								<span>Request a Call</span>
+								<div class="loader"></div>
+							</button>
+							<div class="contact-form__message" aria-live="polite"></div>
+						</form>
+					</div>
+					<div class="contact-us__column">
+						<div class="contact-us__image">
+							<picture>
+								<source srcset="img/index/contact/contact-image-1.avif" type="image/avif">
+								<source srcset="img/index/contact/contact-image-1.webp" type="image/webp">
+								<img src="img/index/contact/contact-image-1.jpg" alt="" width="943" height="969" loading="lazy">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__logo">
+					<a href="index.html" class="footer__logo-link">
+						<img src="img/logo.svg" width="170" height="40" loading="lazy" alt="Logo" class="footer__logo-img">
+					</a>
+				</div>
+				<div class="footer__schedule">
+					<p><b>Scheduled Hours:</b></p>
+					<p>
+						Mon–Fri: 9:00 AM – 6:00 PM <br>
+						Sat–Sun: Closed
+					</p>
+				</div>
+				<a href="privacy-policy.html" class="footer__privacy visible-on-desktop">
+					Privacy Policy
+				</a>
+			</div>
+			<nav class="footer__nav" aria-label="Main">
+				<b class="footer__block-title">Navigation</b>
+				<ul class="footer__block-list">
+					<li>
+						<a href="./" aria-label="Home">
+							<span>Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="./about-us.html" aria-label="About Us">
+							<span>About Us</span>
+						</a>
+					</li>
+					<li>
+						<a href="./contact-us.html" aria-label="Contact Us">
+							<span>Contact Us</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__contacts">
+				<b class="footer__block-title">Contacts</b>
+				<ul class="footer__block-list">
+					<li>
+						<a href="tel:+19162251753" aria-label="916-225-1753">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg#phone" />
+							</svg>
+							<span>
+								916-225-1753
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:info@apex-siding.com" aria-label="info@apex-siding.com">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg#email" />
+							</svg>
+							<span>
+								info@apex-siding.com
+							</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="footer__social">
+					<li>
+						<a href="#" aria-label="Instagram" target="_blank">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg#instagram" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Facebook" target="_blank">
+							<svg width="24" height="24">
+								<use href="img/sprites.svg?1#facebook" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__bottom">
+				<a href="privacy-policy.html" class="footer__privacy visible-on-mobile">
+					Privacy Policy
+				</a>
+				<p class="footer__copyright">
+					@Apex Siding - 2025. All rights reserved.
+				</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js" type="module"></script>
+
+	<script>
+		document.querySelectorAll(".contact-form").forEach(form => {
+			const message = form.querySelector(".contact-form__message");
+			form.addEventListener("submit", event => {
+				event.preventDefault();
+
+				if (form.ariaBusy == "true") return;
+
+				setTimeout(() => {
+					if (form.querySelector(".is-error")) return;
+
+					form.ariaBusy = "true";
+					setTimeout(() => {
+						message.classList.add("is-active");
+						message.textContent = "Message successfully sent. We will contact you shortly!";
+						form.reset();
+						form.querySelectorAll("[data-text]").forEach(item => item.dataset.text = "")
+						form.ariaBusy = "false";
+					}, 2000)
+				}, 0);
+			})
+		})
+	</script>
+
+</body>
+
+</html>

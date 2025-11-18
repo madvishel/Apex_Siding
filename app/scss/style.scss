@@ -6,11 +6,28 @@
 @forward "components/fonts";
 @forward "components/button";
 @forward "components/form";
+@forward "components/loader";
+@forward "components/decor";
+@forward "components/breadcrumbs";
 
 @forward "components/header";
 
 @forward "pages/index/hero";
+@forward "pages/index/about";
+@forward "pages/index/services";
+@forward "pages/index/portfolio";
+@forward "pages/index/advantages";
+@forward "pages/index/action-block";
+@forward "pages/index/contact-us";
+
+@forward "pages/about-us/main";
+@forward "pages/about-us/gallery";
+
+@forward "pages/text-page/text-section";
+
+@forward "pages/404/main";
 
 @forward "components/footer";
 
 // new
+

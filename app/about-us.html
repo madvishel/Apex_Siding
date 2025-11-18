@@ -1,0 +1,122 @@
+@@include("html/header.html", {
+	"class": ""
+})
+
+<main class="main">
+	@@include("html/breadcrumbs.html", {
+		"current": "About Us"
+	})
+	<section class="about-us">
+		<div class="about-us__column">
+			<div class="about-us__content section-content is-light">
+				<h2 class="section-content__title title">
+					About Us
+				</h2>
+				<hr class="section-content__separator decor-separator">
+				<div class="section-content__text is-start">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa eaque aliquam magni laborum sint voluptates sapiente qui ratione iure enim aut perspiciatis aliquid quae molestiae, in accusantium ullam accusamus! </p>
+					<p>Et explicabo neque perferendis, nostrum sed veniam saepe facere pariatur molestiae soluta? Molestias consequuntur at explicabo! Id minima voluptas illum.</p>
+					<p>Et explicabo neque perferendis, nostrum sed veniam saepe facere pariatur molestiae soluta? Molestias consequuntur at explicabo! Id minima voluptas illum.</p>
+				</div>
+			</div>
+		</div>
+		<div class="about-us__column">
+			<div class="about-us__image">
+				<div class="about-us__image-decor decor-element-1"></div>
+				<div class="about-us__image-inner">
+					<picture>
+						<source srcset="img/about-us/hero/about-us-hero-image.avif" type="image/avif">
+						<source srcset="img/about-us/hero/about-us-hero-image.webp" type="image/webp">
+						<img src="img/about-us/hero/about-us-hero-image.jpg" alt="" class="image-effect" width="670" height="595" loading="lazy">
+					</picture>
+				</div>
+				<div class="about-us__image-decor decor-element-2"></div>
+			</div>
+		</div>
+	</section>
+	<section class="gallery section-padding">
+		<div class="gallery__hero section-content container">
+			<h2 class="section-content__title title">
+				Gallery
+			</h2>
+			<hr class="section-content__separator decor-separator">
+			<div class="section-content__text">
+				<p>Explore our gallery to see completed siding, window, door, and remodeling projects. Each photo reflects the quality and style we bring to every home.</p>
+			</div>
+		</div>
+		<div class="gallery__slider gallery-slider swiper">
+			<div class="gallery-slider__wrapper swiper-wrapper">
+				<div class="gallery-slider__slide gallery-slide swiper-slide">
+					<a href="img/about-us/gallery/about-us-gallery-image-1.jpg" data-fancybox="gallery">
+						<picture>
+							<source srcset="img/about-us/gallery/about-us-gallery-image-1.avif" type="image/avif">
+							<source srcset="img/about-us/gallery/about-us-gallery-image-1.webp" type="image/webp">
+							<img src="img/about-us/gallery/about-us-gallery-image-1.jpg" alt="" width="524" height="566" class="image-aspect-ratio" loading="lazy">
+						</picture>
+					</a>
+				</div>
+				<div class="gallery-slider__slide gallery-slide swiper-slide">
+					<a href="img/about-us/gallery/about-us-gallery-image-2.jpg" data-fancybox="gallery">
+						<picture>
+							<source srcset="img/about-us/gallery/about-us-gallery-image-2.avif" type="image/avif">
+							<source srcset="img/about-us/gallery/about-us-gallery-image-2.webp" type="image/webp">
+							<img src="img/about-us/gallery/about-us-gallery-image-2.jpg" alt="" width="808" height="566" class="image-aspect-ratio" loading="lazy">
+						</picture>
+					</a>
+				</div>
+				<div class="gallery-slider__slide gallery-slide swiper-slide">
+					<a href="img/about-us/gallery/about-us-gallery-image-3.jpg" data-fancybox="gallery">
+						<picture>
+							<source srcset="img/about-us/gallery/about-us-gallery-image-3.avif" type="image/avif">
+							<source srcset="img/about-us/gallery/about-us-gallery-image-3.webp" type="image/webp">
+							<img src="img/about-us/gallery/about-us-gallery-image-3.jpg" alt="" width="524" height="566" class="image-aspect-ratio" loading="lazy">
+						</picture>
+					</a>
+				</div>
+				<div class="gallery-slider__slide gallery-slide swiper-slide">
+					<a href="img/about-us/gallery/about-us-gallery-image-1.jpg" data-fancybox="gallery">
+						<picture>
+							<source srcset="img/about-us/gallery/about-us-gallery-image-1.avif" type="image/avif">
+							<source srcset="img/about-us/gallery/about-us-gallery-image-1.webp" type="image/webp">
+							<img src="img/about-us/gallery/about-us-gallery-image-1.jpg" alt="" width="524" height="566" class="image-aspect-ratio" loading="lazy">
+						</picture>
+					</a>
+				</div>
+				<div class="gallery-slider__slide gallery-slide swiper-slide">
+					<a href="img/about-us/gallery/about-us-gallery-image-2.jpg" data-fancybox="gallery">
+						<picture>
+							<source srcset="img/about-us/gallery/about-us-gallery-image-2.avif" type="image/avif">
+							<source srcset="img/about-us/gallery/about-us-gallery-image-2.webp" type="image/webp">
+							<img src="img/about-us/gallery/about-us-gallery-image-2.jpg" alt="" width="808" height="566" class="image-aspect-ratio" loading="lazy">
+						</picture>
+					</a>
+				</div>
+				<div class="gallery-slider__slide gallery-slide swiper-slide">
+					<a href="img/about-us/gallery/about-us-gallery-image-3.jpg" data-fancybox="gallery">
+						<picture>
+							<source srcset="img/about-us/gallery/about-us-gallery-image-3.avif" type="image/avif">
+							<source srcset="img/about-us/gallery/about-us-gallery-image-3.webp" type="image/webp">
+							<img src="img/about-us/gallery/about-us-gallery-image-3.jpg" alt="" width="524" height="566" class="image-aspect-ratio" loading="lazy">
+						</picture>
+					</a>
+				</div>
+			</div>
+			<div class="gallery-slider__footer">
+				<button class="gallery-slider__arrow swiper-button-prev" type="button">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg?2#slider-arrow-prev" />
+					</svg>
+				</button>
+				<div class="gallery-slider__pagination swiper-pagination"></div>
+				<button class="gallery-slider__arrow swiper-button-next" type="button">
+					<svg width="24" height="24">
+						<use href="img/sprites.svg?2#slider-arrow-next" />
+					</svg>
+				</button>
+			</div>
+		</div>
+	</section>
+	@@include("html/contact-us.html")
+</main>
+
+@@include("html/footer.html")

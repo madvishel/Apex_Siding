@@ -1,0 +1,114 @@
+@@include("html/header.html", {
+	"class": " is-active"
+})
+
+	<main class="main">
+		@@include("html/breadcrumbs.html", {
+			"current": "Contact Us"
+		})
+		<section class="contact-us">
+			<div class="contact-us__header container">
+				<div class="contact-us__hero section-content">
+					<h1 class="section-content__title title">
+						Contact Us
+					</h1>
+					<hr class="section-content__separator decor-separator">
+					<div class="section-content__text">
+						<p>
+							Ready to upgrade your home’s exterior? Contact us today for a free estimate and expert guidance.
+						</p>
+					</div>
+				</div>
+				<ul class="contact-us__list">
+					<li>
+						<h2>Phone number:</h2>
+						<p>
+							<a href="tel:+19162251753" aria-label="916-225-1753">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#phone" />
+								</svg>
+								<span>916-225-1753</span>
+							</a>
+						</p>
+					</li>
+					<li>
+						<h2>Email:</h2>
+						<p>
+							<a href="mailto:info@apex-siding.com " aria-label="info@apex-siding.com ">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#email" />
+								</svg>
+								<span>info@apex-siding.com </span>
+							</a>
+						</p>
+					</li>
+					<li>
+						<h2>Social:</h2>
+						<p>
+							<a href="#" aria-label="Instagram" target="_blank">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#instagram" />
+								</svg>
+								<span>Instagram</span>
+							</a>
+							<a href="#" aria-label="Facebook" target="_blank">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#facebook" />
+								</svg>
+								<span>Facebook</span>
+							</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="contact-us__row container">
+				<div class="contact-us__column">
+					<form action="#" class="contact-us__form contact-form">
+						<div class="contact-form__hero">
+							<h3 class="title is-min">Get in Touch</h3>
+						</div>
+						<div class="contact-form__inner">
+							<label class="contact-form__label form-label">
+								<span>First name:</span>
+								<input type="text" name="first-name" placeholder="Your first name" autocapitalize="sentences" required>
+							</label>
+							<label class="contact-form__label form-label">
+								<span>Last name:</span>
+								<input type="text" name="last-name" placeholder="Last name:" autocapitalize="sentences" required>
+							</label>
+							<label class="contact-form__label form-label">
+								<span>Phone:</span>
+								<input type="tel" name="phone" placeholder="Your phone number" required>
+							</label>
+							<label class="contact-form__label form-label">
+								<span>Email:</span>
+								<input type="email" name="email" placeholder="Your email" required>
+							</label>
+							<label class="contact-form__label form-label is-full">
+								<span>Type your message here:</span>
+								<span data-text>
+									<textarea name="message" placeholder="Tell us about your project" autocapitalize="sentences" maxlength="500"></textarea>
+								</span>
+							</label>
+						</div>
+						<button class="contact-form__submit button is-large" type="submit">
+							<span>Request a Call</span>
+							<div class="loader"></div>
+						</button>
+						<div class="contact-form__message" aria-live="polite"></div>
+					</form>
+				</div>
+				<div class="contact-us__column">
+					<div class="contact-us__image">
+						<picture>
+							<source srcset="img/index/contact/contact-image-1.avif" type="image/avif">
+							<source srcset="img/index/contact/contact-image-1.webp" type="image/webp">
+							<img src="img/index/contact/contact-image-1.jpg" alt="" width="943" height="969" loading="lazy">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+@@include("html/footer.html")
