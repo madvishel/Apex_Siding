@@ -2,11 +2,22 @@ import { libs } from "./libs.js";
 
 export default {
 	add_watch: [
-		/* {
-			extname: "json",
-			folder: "json",
-			reload: true
-		} */
+		{
+			extname: "ico",
+			folder: "favicon"
+		},
+		{
+			extname: "webmanifest",
+			folder: "favicon"
+		},
+		{
+			extname: "png",
+			folder: "favicon"
+		},
+		{
+			extname: "svg",
+			folder: "favicon"
+		}
 	],
 	paths: {
 		build: {

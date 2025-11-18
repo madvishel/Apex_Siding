@@ -1,119 +1,119 @@
-		<footer class="footer">
-			<div class="footer__top">
-				<div class="footer__logo">
-					<a href="index.html" class="footer__logo-link">
-						<img src="img/logo.svg" width="170" height="40" loading="lazy" alt="Logo" class="footer__logo-img">
+			<footer class="footer">
+				<div class="footer__top">
+					<div class="footer__logo">
+						<a href="index.html" class="footer__logo-link">
+							<img src="img/logo.svg" width="170" height="40" loading="lazy" alt="Logo" class="footer__logo-img">
+						</a>
+					</div>
+					<div class="footer__schedule">
+						<p><b>Scheduled Hours:</b></p>
+						<p>
+							Mon–Fri: 9:00 AM – 6:00 PM <br>
+							Sat–Sun: Closed
+						</p>
+					</div>
+					<a href="privacy-policy.html" class="footer__privacy visible-on-desktop">
+						Privacy Policy
 					</a>
 				</div>
-				<div class="footer__schedule">
-					<p><b>Scheduled Hours:</b></p>
-					<p>
-						Mon–Fri: 9:00 AM – 6:00 PM <br>
-						Sat–Sun: Closed
+				<nav class="footer__nav" aria-label="Main">
+					<b class="footer__block-title">Navigation</b>
+					<ul class="footer__block-list">
+						<li>
+							<a href="./" aria-label="Home">
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="./about-us.html" aria-label="About Us">
+								<span>About Us</span>
+							</a>
+						</li>
+						<li>
+							<a href="./contact-us.html" aria-label="Contact Us">
+								<span>Contact Us</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__contacts">
+					<b class="footer__block-title">Contacts</b>
+					<ul class="footer__block-list">
+						<li>
+							<a href="tel:+19162251753" aria-label="916-225-1753">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#phone" />
+								</svg>
+								<span>
+									916-225-1753
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:info@apex-siding.com" aria-label="info@apex-siding.com">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#email" />
+								</svg>
+								<span>
+									info@apex-siding.com 
+								</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="footer__social">
+						<li>
+							<a href="https://www.instagram.com/apex.siding?igsh=NWU2a3RvMDRjYTh6" aria-label="Instagram" target="_blank">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#instagram" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg?1#facebook" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<a href="privacy-policy.html" class="footer__privacy visible-on-mobile">
+						Privacy Policy
+					</a>
+					<p class="footer__copyright">
+						@Apex Siding - 2025. All rights reserved.
 					</p>
 				</div>
-				<a href="privacy-policy.html" class="footer__privacy visible-on-desktop">
-					Privacy Policy
-				</a>
-			</div>
-			<nav class="footer__nav" aria-label="Main">
-				<b class="footer__block-title">Navigation</b>
-				<ul class="footer__block-list">
-					<li>
-						<a href="./" aria-label="Home">
-							<span>Home</span>
-						</a>
-					</li>
-					<li>
-						<a href="./about-us.html" aria-label="About Us">
-							<span>About Us</span>
-						</a>
-					</li>
-					<li>
-						<a href="./contact-us.html" aria-label="Contact Us">
-							<span>Contact Us</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="footer__contacts">
-				<b class="footer__block-title">Contacts</b>
-				<ul class="footer__block-list">
-					<li>
-						<a href="tel:+19162251753" aria-label="916-225-1753">
-							<svg width="24" height="24">
-								<use href="img/sprites.svg#phone" />
-							</svg>
-							<span>
-								916-225-1753
-							</span>
-						</a>
-					</li>
-					<li>
-						<a href="mailto:info@apex-siding.com" aria-label="info@apex-siding.com">
-							<svg width="24" height="24">
-								<use href="img/sprites.svg#email" />
-							</svg>
-							<span>
-								info@apex-siding.com 
-							</span>
-						</a>
-					</li>
-				</ul>
-				<ul class="footer__social">
-					<li>
-						<a href="#" aria-label="Instagram" target="_blank">
-							<svg width="24" height="24">
-								<use href="img/sprites.svg#instagram" />
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="#" aria-label="Facebook" target="_blank">
-							<svg width="24" height="24">
-								<use href="img/sprites.svg?1#facebook" />
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__bottom">
-				<a href="privacy-policy.html" class="footer__privacy visible-on-mobile">
-					Privacy Policy
-				</a>
-				<p class="footer__copyright">
-					@Apex Siding - 2025. All rights reserved.
-				</p>
-			</div>
-		</footer>
-	</div>
+			</footer>
+		</div>
 
-	<script src="js/libs.min.js"></script>
-	<script src="js/main.js" type="module"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/main.js" type="module"></script>
 
-	<script>
-		document.querySelectorAll(".contact-form").forEach(form => {
-			const message = form.querySelector(".contact-form__message");
-			form.addEventListener("submit", event => {
-				event.preventDefault();
+		<script>
+			document.querySelectorAll(".contact-form").forEach(form => {
+				const message = form.querySelector(".contact-form__message");
+				form.addEventListener("submit", event => {
+					event.preventDefault();
 
-				if(form.ariaBusy == "true") return;
+					if(form.ariaBusy == "true") return;
 
-				setTimeout(() => {
-					if(form.querySelector(".is-error")) return;
-
-					form.ariaBusy = "true";
 					setTimeout(() => {
-						message.classList.add("is-active");
-						message.textContent = "Message successfully sent. We will contact you shortly!";
-						form.reset();
-						form.querySelectorAll("[data-text]").forEach(item => item.dataset.text = "")
-						form.ariaBusy = "false";
-					}, 2000)
-				}, 0);
-			})
-		})
-	</script>
+						if(form.querySelector(".is-error")) return;
 
-</body>
+						form.ariaBusy = "true";
+						setTimeout(() => {
+							message.classList.add("is-active");
+							message.textContent = "Message successfully sent. We will contact you shortly!";
+							form.reset();
+							form.querySelectorAll("[data-text]").forEach(item => item.dataset.text = "")
+							form.ariaBusy = "false";
+						}, 2000)
+					}, 0);
+				})
+			})
+		</script>
+
+	</body>
 </html>
