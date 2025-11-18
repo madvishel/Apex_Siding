@@ -1,4 +1,4 @@
-# Gulp Build System
+# Apex Siding
 
 This project uses a Gulp-based build system for front-end development automation. It helps with tasks like image optimization, font conversion, file bundling, and project packaging.
 
